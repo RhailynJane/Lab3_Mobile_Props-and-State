@@ -1,14 +1,10 @@
 import React from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 
-type ToDoListProps = {
-  tasks: string[];
-};
-
 {
   /* Part B2: Display the task list */
 }
-function ToDoList({ tasks }: ToDoListProps) {
+function ToDoList({ tasks }: { tasks: string[] }) {
   return (
     <ScrollView>
       {tasks.map((task, index) => (
